@@ -1,0 +1,45 @@
+let main = function()
+{
+    let a = Number(prompt("enter a value"))
+    let b = Number(prompt("enter b value"))
+    let c = Number(prompt("enter c value"))
+    let d = a + b + c
+    console.log(d);
+    let e = a - b - c
+    console.log(e);
+    let f = a * b * c
+    console.log(f)
+
+    if(a >= b && a >= c){
+        console.log(a+"is the largest number.");
+    }else if(a >=a && b>=c){
+        console.log(b+"is the largest number.");
+    }else{
+        console.log(c+"is the largest number.");
+    }
+}
+main();
+
+
+example 2:
+//console.log(a());
+let a = function()
+{
+    return "hello-world"
+}
+console.log(a);
+console.log(a());
+
+function main(a)
+{
+//  console.log(a);
+  console.log(a());
+
+}
+main(function(){
+    return "iam neha"
+})
+
+main(function(){
+    return "iam munni"
+})
