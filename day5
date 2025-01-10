@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./fun-programming.js"></script>
+</body>
+</html>
+
+//js.file
+function main(task)
+{
+   console.log(task(10, 10));
+}
+main(function(a , b){
+    return a + b
+})
+main(function(a , b){
+    return a - b
+})
+main(function(a , b){
+    return a * b
+})
+main(function(a , b){
+    return a // b
+})
+
+//arrow-function
+//introduced in ES-6 version 2015 (ECMA-SCRIPT)
+//it is used to reduce number of lines in a code.
+// arrow function is a anonymous function
+
+//two types of return
+//1)implict return arrow function.
+//2)explicit return arrow function.
+
+//1)implict return arrow function
+//--> no need of using return keyword.
+
+let a = () => console.log("hello");
+console.log(a);
+a()
+
+// => fat-arrow
+
+//2)explicit return arrow function
+//--> return keyword is mandatory
+//--> block is mandatory for return 
+
+ let b =() => { return "hello"}
+ console.log(b);
+ console.log(b());
+
+ let main1 = (task) => {
+    console.log(task);
+    console.log(task());
+ }
+ main1(()=>{
+    return "iam neha"
+ })
+
+ 
+let operation = (a , b , task) => {
+     console.log(task(a,b));
+}
+operation(a = Number(prompt("enter a for addition")), 
+        b = Number(prompt("enter b for addition")),
+    (a , b) => {
+        return a + b
+    })
+
+operation(a = Number(prompt("enter a for substraction")), 
+    b = Number(prompt("enter b for substraction")),
+    (a , b) => {
+    return a + b
+})
+
+operation(a = Number(prompt("enter a for multiplication")), 
+    b = Number(prompt("enter b for multiplication")),
+    (a , b) => {
+    return a + b
+})
