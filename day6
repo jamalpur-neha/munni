@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./nested-fun.js"></script>
+</body>
+</html>
+
+js-file
+function parent()
+{
+    function child()
+    {
+        console.log("iam child fun");
+    }
+    child()
+}
+parent()
+
+var a = 10;
+let b = 20;
+function parent1()
+{
+  var a = "hello"
+  let b = "hii"
+  console.log(a); 
+  console.log(b); 
+  console.log(this.a);
+  console.log(this.b);
+}
+parent1()
+
+function main()
+{
+    let a = 10;
+    function child()
+    {
+        console.log(a);
+    }
+    child()
+}
+main()
