@@ -1,0 +1,35 @@
+event.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="demo()">click</button>
+
+    <button id="demo1">click</button>
+
+    <script async src="./event.js"></script>
+</body>
+</html>
+
+event.js
+function demo()
+{
+    console.log("hello-world");
+}
+
+let a = document.getElementById("demo1")
+console.log(a);
+
+a.onclick = function(){
+    //let res = Math.round((Math.random) * 10000)
+    //console.log(res);
+
+    let res = Math.round(Math.random() * 10000).toString(16)
+    console.log(res);
+
+    document.body.style.backgroundColor = `#${res}`
+}
