@@ -1,0 +1,46 @@
+dom.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./dom.js"></script>
+</body>
+</html>
+
+dom.js
+
+let a = document.createElement("h1")
+console.log(a);
+a.textContent = "hello-world"
+
+document.body.appendChild(a)
+
+a.style.backgroundColor = "red"
+
+
+
+//create a div-tag
+let div = document.createElement("div")
+console.log(div);
+
+//append div-tag to body-tag
+document.body.appendChild(div)
+
+div.style.border = "5px solid"
+
+//create a ol-tag
+let ol = document.createElement("ol")
+console.log(ol);
+
+//append ol-tag to div-tag
+div.appendChild(ol)
+
+//create an li-tag
+let li1 = document.createElement("li")
+console.log(li1);
+li1.textContent = "react"
