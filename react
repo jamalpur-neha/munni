@@ -1,0 +1,40 @@
+Framework :-
+•	it is a collection of library.
+•	ex:- angular ja, bootstrap, tailwind
+Library :-
+•	it is a collection of methods or functions.
+•	ex:- react js, jquery, node.js, popper js
+React :-
+•	it is a library.
+•	it is used to develop single page application.
+•	it is a component based application.
+•	components are re-usable.
+•	react is declarative.
+NOTE :-
+•	React will renders components on a web page without a page reloading.
+•	Diffing algorithm
+•	MVC architecture
+•	Three dependency
+•	React : createElement, all-hooks
+•	React-dom : used to create virtual-dom
+•	React-script : run, debug, test, eject react-app
+Note :-
+•	react will renders component on the web-page without page re-loading.
+•	2013, facebook (meta) , Jorden walke introduced a react and he is working in a facebook company.
+•	React 19
+How to create react-application
+•	1) CDN-way
+•	2) node.js way
+•	In node we have two types that are
+•	a) npm : node package manager
+•	it is used to install , update , delete packages in a js.
+•	Packages will be installed globally .
+•	Ex:- npm install -g create react-app
+•	Create-react-app project-name
+•	Npm create vit@latest to install latest version of react.
+•	b) npx : node package executer
+•	npm is used to execute packages without installing it.
+•	No need of  using globally while installing packages.
+•	Ex:- npx create-react-app project name.
+
+
