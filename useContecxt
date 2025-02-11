@@ -109,3 +109,126 @@ createRoot(document.getElementById('root')).render(
  
   
 ) 
+CompA.jsx
+// import React from 'react'
+// import CompB from './CompB'
+
+// export let user = React.createContext()
+// export let id = React.createContext()
+
+// const CompA = () => {
+//   return (
+//     <div>
+//         <user.Provider value={"neha"}>
+//             <id.Provider value={10}>
+//                 <CompB/>
+//             </id.Provider>
+//         </user.Provider>
+        
+//     </div>
+//   )
+// }
+
+// export default CompA
+
+import React from 'react'
+import CompB from './CompB.jsx'
+import { useContext } from 'react'
+export let userName = React.createContext()
+export let id = React.createContext()
+
+const CompA = () => {
+ 
+  return (
+    <div>
+       <userName.Provider value={"neha"}>
+          <id.Provider value={100}>
+             <CompB/>
+          </id.Provider>
+       </userName.Provider>
+    </div>
+  )
+}
+
+export default CompA
+
+CompB
+// import React from 'react'
+// import CompC from './CompC'
+
+// const CompB = () => {
+//   return (
+//     <div>
+//         <CompC/>
+//     </div>
+//   )
+// }
+
+// export default CompB
+
+// import React from 'react'
+import CompC from './CompC'
+
+const CompB = () => {
+  return (
+    <div>
+      <CompC/>
+    </div>
+  )
+}
+
+export default CompB
+
+CompC
+// import React from 'react'
+// import { user , id } from "./CompA"
+// const CompC = () => {
+//   return (
+//     <div>
+//         {
+//             <user.Consumer>
+//                 {
+//                   (name) => {
+//                     return(
+//                         <>
+//                         {
+//                             <id.Consumer>
+//                                 {
+//                                     (number) => {
+//                                         return (
+//                                             <>
+//                                             <h1>my name is { name}</h1>
+//                                             <h1>my id is { number}</h1>
+//                                             </>
+//                                         )
+//                                     }
+//                                 }
+//                             </id.Consumer>
+//                         }
+//                         </>      
+//                     )
+//                 }
+// }
+//             </user.Consumer>
+//         }
+//     </div>
+//   )
+// }
+
+// export default CompC
+
+// import React from 'react'
+import { useContext } from 'react'
+import { id, userName } from './CompA.jsx'
+const CompC = () => {
+    let name = useContext(userName)
+      let id1 = useContext(id)
+  return (
+    <div>
+        {name} and {id}
+
+    </div>
+  )
+}
+
+export default CompC
